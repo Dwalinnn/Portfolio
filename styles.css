@@ -101,8 +101,10 @@ body {
   border-bottom: 2px solid var(--color-font);
 }
 
-.TechnicalArtist {
-  font-family: "Novasquare";
+.TechnicalArtist, 
+h2, 
+h3 {
+  font-family: "Arial";
 }
 
 @media all and (min-width: 750px) {
