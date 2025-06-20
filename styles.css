@@ -195,12 +195,11 @@ nav ul {
 
 nav li + li {
   margin-left: 1.5rem;
-  color: var(--color-font);
 }
 
 nav a {
   text-decoration: none;
-  color: var(--color-grey);
+  color: var(--color-font);
   transition: color .2s;
 }
 
