@@ -195,6 +195,7 @@ nav ul {
 
 nav li + li {
   margin-left: 1.5rem;
+  color: var(--color-font);
 }
 
 nav a {
