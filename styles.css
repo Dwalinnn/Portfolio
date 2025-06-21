@@ -255,7 +255,7 @@ nav a:hover {
 }
 
 .bioText {
-  font-family: "Monserrat";
+  font-family: "Montserrat";
   text-align: justify;
   padding-top: 5px;
   column-width: 60ch;
@@ -342,7 +342,7 @@ a {
 
 
 /* CARD INDEX */
-.banner {
+.banner01 {
   width: 100vw;
   height: 400px;
   background-image: url("./ressources/NeedleEye/banniere.png");
@@ -357,6 +357,20 @@ a {
   mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
 }
 
+.banner {
+  width: 100vw;
+  height: 400px;
+  background-image: url("./ressources/EternalAscent/1719351078185.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+  -webkit-mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+}
 
 
 
