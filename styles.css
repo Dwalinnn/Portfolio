@@ -150,16 +150,6 @@ h3 {
   padding:  0;
 }
 
-.profilePicture {
-    max-width: 100%;
-    height: auto;
-    width: 350px;
-    background: var(--color-grey);
-  padding: 1rem;
-  border-radius: 50px;
-  transition: transform .2s;
-}
-
 
 @media all and (min-width: 1024px) {
     .profilePicture {
@@ -167,18 +157,7 @@ h3 {
 }
 }
 
-.fluidImage {
-    max-width: 100%;
-    height: auto;
-}
 
-.image-container {
-  max-width: 100%;
-    height: auto;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .site-header h1 {
   font-size: 1.5rem;
@@ -215,25 +194,41 @@ nav a:hover {
   color: var(--color-deepred);
 }
 
-/* Sections */
+/*///////////////////////////////////////////////*/
 
-.banner {
-  width: 100vw;
-  height: 400px;
-  background-image: url("./ressources/NeedleEye/banniere.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -10;
-   -webkit-mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
-  mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+/* images */
+
+.fluidImage {
+    max-width: 100%;
+    height: auto;
 }
 
+.image-container {
+  max-width: 100%;
+    height: auto;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePicture {
+    max-width: 100%;
+    height: auto;
+    width: 350px;
+    background: var(--color-grey);
+  padding: 1rem;
+  border-radius: 50px;
+  transition: transform .2s;
+}
+
+
+
+
+
+/*   TEXT   */
+
 .gridBio {
- display: grid;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   justify-items: center;
@@ -244,23 +239,41 @@ nav a:hover {
 }
 
 @media  all and (min-width: 1024px) {
-    .gridBio {
+  .gridBio {
     grid-template-columns: 250px 1fr;
     align-items: start;
-}
+  }
 }
 
 .bioPost {
-    font-weight: 400;
-    color: var(--color-deepred);
+  font-weight: 400;
+  color: var(--color-deepred);
 }
 
 .bioText {
-    font-family: "Monserrat";
-    text-align: justify;
-    padding-top: 5px;
-    column-width: 60ch;
+  font-family: "Monserrat";
+  text-align: justify;
+  padding-top: 5px;
+  column-width: 60ch;
 }
+
+.PaddingBottom {
+  padding-bottom: 5px;
+}
+
+
+/*///////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+/* Sections */
 
 section {
   margin-bottom: 3rem;
@@ -306,6 +319,50 @@ a {
   margin: .5rem 0;
   font-size: 1.2rem;
 }
+
+/*///////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+/* CARD INDEX */
+.banner {
+  width: 100vw;
+  height: 400px;
+  background-image: url("./ressources/NeedleEye/banniere.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+   -webkit-mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////*/
+
 
 /* Footer */
 footer {
