@@ -137,27 +137,30 @@ h3 {
 }
 
 .Container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 20px 0px 20px 0;
 }
 
 }
 
-.Container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding:  0;
-}
-
-
 @media all and (min-width: 1024px) {
     .profilePicture {
     width: 800px;
 }
+
+.Container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 50px 10px 50px;
+}
 }
 
-
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:  0px 50px 0px 50px;
+}
 
 .site-header h1 {
   font-size: 1.5rem;
@@ -235,13 +238,14 @@ nav a:hover {
   align-items: center;
   max-width: 1400px;
   margin: auto;
-  padding: 2rem;
+  padding: 2rem 0 2rem 0;
 }
 
 @media  all and (min-width: 1024px) {
   .gridBio {
-    grid-template-columns: 250px 1fr;
-    align-items: start;
+    grid-template-columns: 260px 1fr;
+    align-items: center;
+    justify-items: center;
   }
 }
 
@@ -258,7 +262,7 @@ nav a:hover {
 }
 
 .PaddingBottom {
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 
