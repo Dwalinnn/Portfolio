@@ -93,12 +93,14 @@ body {
 
 /* Header */
 .site-header {
+  position:sticky;
   display: flex;
   justify-content:space-between;
   align-items: center;
   padding: 2rem 5rem 2rem 5rem;
   background: var(--color-main);
   border-bottom: 2px solid var(--color-font);
+  z-index: 10;
 }
 
 .TechnicalArtist, 
@@ -214,8 +216,20 @@ nav a:hover {
 }
 
 /* Sections */
-main {
-  padding: 2rem;
+
+.banner {
+  width: 100vw;
+  height: 400px;
+  background-image: url("./ressources/NeedleEye/banniere.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+   -webkit-mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
 }
 
 .gridBio {
@@ -242,6 +256,7 @@ main {
 }
 
 .bioText {
+    font-family: "Monserrat";
     text-align: justify;
     padding-top: 5px;
     column-width: 60ch;
@@ -294,9 +309,11 @@ a {
 
 /* Footer */
 footer {
+  position: sticky;
   text-align: center;
   padding: 1rem;
   background: var(--color-main);
   border-top: 2px solid var(--color-font);
   font-size: .9rem;
+  z-index: 10;
 }
