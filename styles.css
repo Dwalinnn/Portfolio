@@ -238,7 +238,7 @@ nav a:hover {
   align-items: center;
   max-width: 1400px;
   margin: auto;
-  padding: 2rem 0 2rem 0;
+  padding: 5rem 0 2rem 0;
 }
 
 @media  all and (min-width: 1024px) {
@@ -269,7 +269,12 @@ nav a:hover {
 /*///////////////////////////////////////////////*/
 
 
-
+.center {
+  align-items: center;
+  display: flex ;
+  justify-content: center;
+  padding: 5rem;
+}
 
 
 
@@ -348,7 +353,7 @@ a {
   align-items: center;
   justify-content: center;
   z-index: -10;
-   -webkit-mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
   mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
 }
 
