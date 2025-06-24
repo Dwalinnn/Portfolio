@@ -159,7 +159,7 @@ h3 {
 .Container {
   max-width: 1200px;
   margin: 0 auto;
-  padding:  0px 50px 0px 50px;
+  padding:  10px 30px 10px 30px;
 }
 
 .site-header h1 {
@@ -290,8 +290,15 @@ section {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+@media all and (min-width: 1024px) {
+  .cards {
+  grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
   gap: 1.5rem;
+}
 }
 
 a {
@@ -378,14 +385,8 @@ a {
   text-decoration: none;
   list-style-type: none;
   display: flex;
-  justify-content: start;
-  align-items: center;
+  justify-content: left;
   padding-top: 50px;
-}
-
-.links {
-
-  padding-left: 50px;
 }
 
 .icons {
