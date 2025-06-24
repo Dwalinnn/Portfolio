@@ -397,7 +397,15 @@ svg path {
   fill: var(--color-font);
 }
 
+svg circle {
+  fill: var(--color-font);
+}
+
 svg:hover path {
+  fill: var(--color-deepred);
+}
+
+svg:hover circle {
   fill: var(--color-deepred);
 }
 
