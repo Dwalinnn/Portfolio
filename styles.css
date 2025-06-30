@@ -143,8 +143,35 @@ canvas {
   z-index: 10;
 }
 
+.site-header-menu {
+  position:sticky;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 2rem 30px 2rem 30px;
+  background: var(--color-main);
+  border-bottom: 2px solid var(--color-font);
+  z-index: 10;
+}
+
+@media all and (min-width: 750px) {
+    .site-header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem 2rem 5rem;
+  background: var(--color-main);
+  border-bottom: 2px solid var(--color-font);
+}
+}
+
+
 .TechnicalArtist {
-  justify-self: right;
+  justify-self: left;
+}
+
+.TechnicalArtist-menu {
+  justify-self: center;
 }
 
 .TechnicalArtist, 
@@ -154,7 +181,7 @@ h3 {
 }
 
 @media all and (min-width: 750px) {
-    .site-header {
+  .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -171,14 +198,7 @@ h3 {
 }
 
 @media all and (min-width: 1400px) {
-    .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 5rem 2rem 5rem;
-  background: var(--color-main);
-  border-bottom: 2px solid var(--color-font);
-}
+
 
 .Container {
   max-width: 1600px;
@@ -210,7 +230,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-.site-header .highlight {
+.highlight {
   color: var(--color-deepred);
 }
 
