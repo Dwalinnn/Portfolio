@@ -132,6 +132,14 @@ canvas {
 }
 
 /* Header */
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+}
+
 .site-header {
   position:sticky;
   display: flex;
@@ -168,16 +176,18 @@ canvas {
 
 .TechnicalArtist {
   justify-self: left;
+  font-weight: 400;
 }
 
 .TechnicalArtist-menu {
   justify-self: center;
+  font-weight: 400;
 }
 
-.TechnicalArtist, 
 h2, 
 h3 {
-  font-family: "Arial";
+  font-family: "Montserrat";
+  font-weight: 600;
 }
 
 @media all and (min-width: 750px) {
@@ -310,13 +320,12 @@ nav a:hover {
 /*   TEXT   */
 
 .bioPost {
-  font-weight: 400;
+  font-weight: 600;
   color: var(--color-deepred);
 }
 
 .bioText {
   font-family: "Montserrat";
-  text-align: justify;
   padding-top: 5px;
   column-width: 60ch;
 }
@@ -432,7 +441,7 @@ a {
 
 .card {
   height: 100%;
-  background: var(--color-grey);
+  background-color: var(--color-grey);
   padding: 1rem;
   border: 1px solid var(--color-font);
   border-radius: 8px;
