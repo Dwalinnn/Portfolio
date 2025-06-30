@@ -18,25 +18,37 @@
     });
 
     function drawField() {
-      const spacing = 30;
-      const len = 10;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.strokeStyle = "rgba(255,255,255,0.2)";
-      ctx.lineWidth = 2;
+  const spacing = 30;
+  const len = 12;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      for (let x = 0; x < canvas.width; x += spacing) {
-        for (let y = 0; y < canvas.height; y += spacing) {
-          const angle = Math.atan2(mouse.y - y, mouse.x - x);
-          const dx = Math.cos(angle) * len;
-          const dy = Math.sin(angle) * len;
+  for (let x = 0; x < canvas.width; x += spacing) {
+    for (let y = 0; y < canvas.height; y += spacing) {
+      const dxMouse = mouse.x - x;
+      const dyMouse = mouse.y - y;
+      const dist = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
 
-          ctx.beginPath();
-          ctx.moveTo(x, y);
-          ctx.lineTo(x + dx, y + dy);
-          ctx.stroke();
-        }
-      }
+      // Distance max = diagonale écran
+      const maxDist = 1000;
+      const norm = Math.min(dist / maxDist, 1);;
+
+      // Couleur HSL selon distance (ex: rouge proche → violet lointain)
+      const hue = norm * 240; // 0 = rouge, 240 = bleu
+      const alpha = 1 - norm * 0.8; // plus loin = plus transparent
+
+      ctx.strokeStyle = `hsla(${hue}, 100%, 65%, ${alpha})`;
+
+      const angle = Math.atan2(dyMouse, dxMouse);
+      const dx = Math.cos(angle) * len;
+      const dy = Math.sin(angle) * len;
+
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      ctx.lineTo(x + dx, y + dy);
+      ctx.stroke();
     }
+  }
+}
 
     function animate() {
       drawField();
