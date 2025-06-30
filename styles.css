@@ -448,6 +448,8 @@ a {
   transition: transform .2s;
   text-decoration: none;
   color: inherit;
+   backdrop-filter: blur(2px);
+   -webkit-backdrop-filter: blur(2px);
 }
 
 .card:hover {
