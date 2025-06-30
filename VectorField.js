@@ -8,7 +8,7 @@
     }
 
     window.addEventListener("resize", resizeCanvas);
-    resizeCanvas(); // initial
+    resizeCanvas();
 
     let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
@@ -28,13 +28,11 @@
       const dyMouse = mouse.y - y;
       const dist = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
 
-      // Distance max = diagonale écran
       const maxDist = 1000;
       const norm = Math.min(dist / maxDist, 1);;
 
-      // Couleur HSL selon distance (ex: rouge proche → violet lointain)
-      const hue = norm * 240; // 0 = rouge, 240 = bleu
-      const alpha = 1 - norm * 0.8; // plus loin = plus transparent
+      const hue = norm * 240;
+      const alpha = 1 - norm * 0.8;
 
       ctx.strokeStyle = `hsla(${hue}, 100%, 65%, ${alpha})`;
 
