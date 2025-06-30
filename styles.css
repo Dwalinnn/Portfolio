@@ -78,17 +78,27 @@ span {
 
 html {
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 body {
   margin-left: 0;
   margin-right: 0;
   font-family: "Montserrat","Arial";
-  background-color: var(--color-main);
   color: var(--color-font);
   line-height: 1.6;
   margin: 0;
   background: var(--color-main);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none; /* important si tu veux que le canvas ne bloque pas les clics */
 }
 
 /* Header */
@@ -101,6 +111,10 @@ body {
   background: var(--color-main);
   border-bottom: 2px solid var(--color-font);
   z-index: 10;
+}
+
+.TechnicalArtist {
+  justify-self: right;
 }
 
 .TechnicalArtist, 
@@ -188,6 +202,15 @@ nav ul {
 }
 }
 
+.VerticalAlign {
+  vertical-align: middle;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 nav li + li {
   margin-left: 1.5rem;
 }
@@ -196,6 +219,7 @@ nav a {
   text-decoration: none;
   color: var(--color-font);
   transition: color .2s;
+  align-self: start;
 }
 
 nav a:hover {
@@ -515,6 +539,7 @@ a {
   max-width: 50px;
   height: 50px;
   transition: transform .2s;
+  vertical-align: middle;
 }
 
 .icons:hover{
