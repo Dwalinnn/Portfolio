@@ -534,9 +534,16 @@ a {
   text-decoration: none;
   list-style-type: none;
   display: flex;
-  gap: 10rem;
+  gap: 1rem;
   justify-self: center;
+  padding-top: 20px;
+}
+
+@media all and (min-width: 750px) {
+  .LinkList {
+  gap: 10rem;
   padding-top: 50px;
+}
 }
 
 .icons {
