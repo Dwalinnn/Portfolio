@@ -22,7 +22,7 @@
       const len = 10;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.strokeStyle = "rgba(255,255,255,0.2)";
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 2;
 
       for (let x = 0; x < canvas.width; x += spacing) {
         for (let y = 0; y < canvas.height; y += spacing) {
