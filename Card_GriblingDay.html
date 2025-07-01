@@ -6,7 +6,12 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="CursorDisable">
+
+<div id="custom-cursor"></div>
+    
+    <canvas id="canvas"></canvas>
+
   <header class="site-header">
     <nav>
         <ul>
@@ -32,7 +37,7 @@
       <div class="banner09"></div>
         <div class="Container">
           <div class="gridBio">
-            <div>
+            <div  class="intro">
               <h2>Gribling Day</h2>
               <h3 class="bioPost">MultitiJam winner</h3>
             </div>
@@ -60,11 +65,11 @@
       <div class="Container">
         <div class="grid2Col">
           <img class="fluidImage" src="./ressources/GriblingDay/start.png" alt="">
-          <p class="Text">This Scene has been made for the eternal ascent Challenge, everything has been made from scratch except the animations and the character (MetaHuman)</p>
-          <p class="Text">This Scene has been made for the eternal ascent Challenge, everything has been made from scratch except the animations and the character (MetaHuman)</p>
+          <p class="Text glass">This Scene has been made for the eternal ascent Challenge, everything has been made from scratch except the animations and the character (MetaHuman)</p>
+          <p class="Text glass">This Scene has been made for the eternal ascent Challenge, everything has been made from scratch except the animations and the character (MetaHuman)</p>
           <img class="fluidImage" src="./ressources/GriblingDay/cake.png" alt="">
           <img class="fluidImage" src="./ressources/GriblingDay/menu.png" alt="">
-          <p class="Text">This Scene has been made for the eternal ascent Challenge, everything has been made from scratch except the animations and the character (MetaHuman)</p>
+          <p class="Text glass">This Scene has been made for the eternal ascent Challenge, everything has been made from scratch except the animations and the character (MetaHuman)</p>
         </div>
 
         <div class="grid1Col">
@@ -79,6 +84,8 @@
   <footer>
     © 2025 D'Août Clément.
   </footer>
+  <script src="./custom-cursor.js" defer></script>
+            <script src="./VectorField.js" defer></script>
 </body>
 </html>
 

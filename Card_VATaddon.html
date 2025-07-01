@@ -6,7 +6,12 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="CursorDisable">
+
+<div id="custom-cursor"></div>
+    
+    <canvas id="canvas"></canvas>
+
   <header class="site-header">
       <div>
           <h1>D'Août Clément<span class="highlight">.</span></h1>
@@ -29,7 +34,7 @@
       <div class="banner04"></div>
         <div class="Container">
           <div class="gridBio">
-            <div>
+            <div class="intro">
               <h2>VAT addon</h2>
               <h3 class="bioPost">to convert anything (or almost) in Vertex Animation Texture</h3>
             </div>
@@ -58,8 +63,8 @@
       <div class="Container">
         <div class="grid2Col">
           <img class="fluidImage" src="./ressources/VATs/Capture d'écran 2025-06-20 175444.png" alt="">
-          <p class="Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iure magni veritatis aliquid, quibusdam officia voluptates hic eius, nisi quaerat quo suscipit! Rem nihil libero ratione nostrum deleniti tempore placeat.</p>
-          <p class="Text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam asperiores, saepe consequuntur possimus rerum autem modi animi sed. Iusto, omnis. Mollitia dolor, veritatis accusantium corporis eius cum asperiores voluptates voluptas.</p>
+          <p class="Text glass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iure magni veritatis aliquid, quibusdam officia voluptates hic eius, nisi quaerat quo suscipit! Rem nihil libero ratione nostrum deleniti tempore placeat.</p>
+          <p class="Text glass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam asperiores, saepe consequuntur possimus rerum autem modi animi sed. Iusto, omnis. Mollitia dolor, veritatis accusantium corporis eius cum asperiores voluptates voluptas.</p>
           <img class="fluidImage" src="./ressources/VATs/Capture d'écran 2025-06-20 175444.png" alt="">
         </div>
         
@@ -75,6 +80,10 @@
   <footer>
     © 2025 D'Août Clément.
   </footer>
+
+            <script src="./custom-cursor.js" defer></script>
+            <script src="./VectorField.js" defer></script>
+
 </body>
 </html>
 

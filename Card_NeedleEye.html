@@ -6,7 +6,12 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="CursorDisable">
+
+<div id="custom-cursor"></div>
+    
+    <canvas id="canvas"></canvas>
+
   <header class="site-header">
       <div>
           <h1>D'Août Clément<span class="highlight">.</span></h1>
@@ -29,7 +34,7 @@
       <div class="banner01"></div>
         <div class="Container">
           <div class="gridBio">
-            <div>
+            <div  class="intro">
               <h2>Needle Eye</h2>
               <h3 class="bioPost">A master's degree end of study work</h3>
             </div>
@@ -61,6 +66,9 @@
   <footer>
     © 2025 D'Août Clément.
   </footer>
+
+              <script src="./custom-cursor.js" defer></script>
+            <script src="./VectorField.js" defer></script>
 </body>
 </html>
 
