@@ -615,10 +615,11 @@ a {
   mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
 }
 
+
 .banner01 {
   width: 100vw;
   height: 400px;
-  background-image: url("./ressources/NeedleEye/banniere.png");
+  background-image: url("./ressources/GameOver/Capture\ d\'écran\ 2025-06-20\ 154416.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -633,7 +634,7 @@ a {
 .banner {
   width: 100vw;
   height: 400px;
-  background-image: url("./ressources/EternalAscent/1719351078185.jpg");
+  background-image: url("./ressources/NeedleEye/banniere.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -644,7 +645,6 @@ a {
   -webkit-mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
   mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
 }
-
 
 .LinkList {
   text-decoration: none;
