@@ -646,6 +646,21 @@ a {
   mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
 }
 
+.bannerTouchDesigner {
+  width: 100vw;
+  height: 400px;
+  background-image: url("./ressources/TouchDesigner/AudioReactive_02.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+  -webkit-mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, var(--color-main) 70%, transparent 100%);
+}
+
 .LinkList {
   text-decoration: none;
   list-style-type: none;
