@@ -32,7 +32,7 @@
       const norm = Math.min(dist / maxDist, 1);;
 
       const hue = norm * 280;
-      const alpha = .2 - norm * 0.5;
+      const alpha = .5 - norm * 0.5;
 
       ctx.strokeStyle = `hsla(${hue}, 50%, 80%, ${alpha})`;
 
