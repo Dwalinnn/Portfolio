@@ -18,7 +18,7 @@
     });
 
     function drawField() {
-  const spacing = 50;
+  const spacing = 40;
   const len = 100;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
