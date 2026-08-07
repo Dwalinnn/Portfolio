@@ -28,7 +28,7 @@
       const dyMouse = mouse.y - y;
       const dist = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
 
-      const maxDist = 100;
+      const maxDist = 110;
       const norm = Math.min(dist / maxDist, 1);;
 
       const hue = norm * 280;
