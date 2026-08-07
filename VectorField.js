@@ -19,7 +19,7 @@
 
     function drawField() {
   const spacing = 50;
-  const len = 80;
+  const len = 100;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   for (let x = 0; x < canvas.width; x += spacing) {
@@ -28,7 +28,7 @@
       const dyMouse = mouse.y - y;
       const dist = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
 
-      const maxDist = 600;
+      const maxDist = 100;
       const norm = Math.min(dist / maxDist, 1);;
 
       const hue = norm * 280;
