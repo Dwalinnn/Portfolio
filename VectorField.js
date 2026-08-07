@@ -18,7 +18,7 @@
     });
 
     function drawField() {
-  const spacing = 40;
+  const spacing = 60;
   const len = 100;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -28,13 +28,13 @@
       const dyMouse = mouse.y - y;
       const dist = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
 
-      const maxDist = 110;
+      const maxDist = 100;
       const norm = Math.min(dist / maxDist, 1);;
 
-      const hue = norm * 280;
-      const alpha = .5 - norm * 0.5;
+      const hue = norm * 1;
+      const alpha = .6 - norm * .6;
 
-      ctx.strokeStyle = `hsla(${hue}, 50%, 80%, ${alpha})`;
+      ctx.strokeStyle = `hsla(${hue}, 100%, 80%, ${alpha})`;
 
       const angle = Math.atan2(dyMouse, dxMouse);
       const dx = Math.cos(angle) * len;
